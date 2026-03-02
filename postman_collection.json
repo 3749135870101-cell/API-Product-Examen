@@ -84,7 +84,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"price\": 19.99,\n  \"stock\": 80\n}"
+          "raw": "{\n  \"name\": \"Mouse inalámbrico\",\n  \"description\": \"Mouse ergonómico RGB\",\n  \"price\": 25.99,\n  \"stock\": 100\n}"
         },
         "url": {
           "raw": "{{base_url}}/products/1",
