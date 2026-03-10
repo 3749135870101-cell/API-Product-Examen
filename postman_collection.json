@@ -1,46 +1,64 @@
 {
   "info": {
+    "_postman_id": "aa4b841b-8803-4c17-869a-3dda2e0411b0",
     "name": "Products API",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
-  "variable": [
-    {
-      "key": "base_url",
-      "value": "http://localhost:3000/api"
-    }
-  ],
   "item": [
     {
       "name": "Health",
+      "id": "6c6c79cd-4152-4058-a6df-c6a5a29e3be5",
       "request": {
         "method": "GET",
         "header": [],
         "url": {
           "raw": "{{base_url}}/health",
-          "host": ["{{base_url}}"],
-          "path": ["health"]
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "health"
+          ]
         }
-      }
+      },
+      "response": []
     },
     {
       "name": "List",
+      "id": "2b4cf3dd-a2ab-4807-ba32-bad20de717f6",
       "request": {
         "method": "GET",
         "header": [],
         "url": {
           "raw": "{{base_url}}/products?page=1&limit=10",
-          "host": ["{{base_url}}"],
-          "path": ["products"],
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products"
+          ],
           "query": [
-            { "key": "page", "value": "1" },
-            { "key": "limit", "value": "10" },
-            { "key": "q", "value": "", "disabled": true }
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "10"
+            },
+            {
+              "key": "q",
+              "value": "",
+              "disabled": true
+            }
           ]
         }
-      }
+      },
+      "response": []
     },
     {
       "name": "Create",
+      "id": "57f42e04-f366-43f3-aaf4-86d832e607f2",
       "request": {
         "method": "POST",
         "header": [
@@ -55,25 +73,38 @@
         },
         "url": {
           "raw": "{{base_url}}/products",
-          "host": ["{{base_url}}"],
-          "path": ["products"]
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products"
+          ]
         }
-      }
+      },
+      "response": []
     },
     {
       "name": "GetById",
+      "id": "3d001ee2-01c1-4f0e-9617-d931a042c766",
       "request": {
         "method": "GET",
         "header": [],
         "url": {
           "raw": "{{base_url}}/products/1",
-          "host": ["{{base_url}}"],
-          "path": ["products", "1"]
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products",
+            "1"
+          ]
         }
-      }
+      },
+      "response": []
     },
     {
       "name": "Update",
+      "id": "085a0b2d-134f-4a3a-8334-2981d77a999b",
       "request": {
         "method": "PUT",
         "header": [
@@ -88,22 +119,42 @@
         },
         "url": {
           "raw": "{{base_url}}/products/1",
-          "host": ["{{base_url}}"],
-          "path": ["products", "1"]
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products",
+            "1"
+          ]
         }
-      }
+      },
+      "response": []
     },
     {
       "name": "Delete",
+      "id": "61e5fd68-189d-4111-95fd-f179665d1de6",
       "request": {
         "method": "DELETE",
         "header": [],
         "url": {
           "raw": "{{base_url}}/products/1",
-          "host": ["{{base_url}}"],
-          "path": ["products", "1"]
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products",
+            "1"
+          ]
         }
-      }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "id": "ebfc1298-e49b-4b46-96f6-ef110df4e078",
+      "key": "base_url",
+      "value": "http://localhost:3000/api"
     }
   ]
 }
