@@ -23,4 +23,4 @@ model Product {
   updated_at  DateTime @updatedAt
 
   @@map("products")
-}
+ }
